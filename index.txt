@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict </h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="PS" placeholder="PS" required="required" />
+
+        <input type="text" name="QV2M" placeholder="QV2M" required="required" />
+
+		<input type="text" name="T2M" placeholder="T2M" required="required" />
+
+<input type="text" name="T2MDEW" placeholder="T2MDEW" required="required" />
+
+<input type="text" name="T2MWET" placeholder="T2MWET" required="required" />
+
+<input type="text" name="T2M_MAX" placeholder="T2M_MAX" required="required" />
+
+<input type="text" name="T2M_MIN" placeholder="T2M_MIN" required="required" />
+
+<input type="text" name="T2M_RANGE" placeholder="T2M_RANGE" required="required" />
+
+<input type="text" name="TS" placeholder="TS" required="required" />
+
+<input type="text" name="WS10M_RANGE" placeholder="WS10M_RANGE" required="required" />
+
+<input type="text" name="WS50M" placeholder="'WS50M" required="required" />
+
+<input type="text" name="WS50M_MAX" placeholder="WS50M_MAX" required="required" />
+
+<input type="text" name="WS50M_RANGE" placeholder="WS50M_RANGE" required="required" />
+
+<input type="text" name="month" placeholder="month" required="required" />
+
+<input type="text" name="day" placeholder="day" required="required" />
+
+
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
