@@ -18,35 +18,35 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="PS" placeholder="PS" required="required" />
+    	<input type="number" step="any" name="PS" placeholder="PS" required="required" />
 
-        <input type="text" name="QV2M" placeholder="QV2M" required="required" />
+        <input type="number" step="any" name="QV2M" placeholder="QV2M" required="required" />
 
-		<input type="text" name="T2M" placeholder="T2M" required="required" />
+		<input type="number" step="any" name="T2M" placeholder="T2M" required="required" />
 
-<input type="text" name="T2MDEW" placeholder="T2MDEW" required="required" />
+<input type="number" step="any" name="T2MDEW" placeholder="T2MDEW" required="required" />
 
-<input type="text" name="T2MWET" placeholder="T2MWET" required="required" />
+<input type="number" step="any" name="T2MWET" placeholder="T2MWET" required="required" />
 
-<input type="text" name="T2M_MAX" placeholder="T2M_MAX" required="required" />
+<input type="number" step="any" name="T2M_MAX" placeholder="T2M_MAX" required="required" />
 
-<input type="text" name="T2M_MIN" placeholder="T2M_MIN" required="required" />
+<input type="number" step="any" name="T2M_MIN" placeholder="T2M_MIN" required="required" />
 
-<input type="text" name="T2M_RANGE" placeholder="T2M_RANGE" required="required" />
+<input type="number" step="any" name="T2M_RANGE" placeholder="T2M_RANGE" required="required" />
 
-<input type="text" name="TS" placeholder="TS" required="required" />
+<input type="number" step="any" name="TS" placeholder="TS" required="required" />
 
-<input type="text" name="WS10M_RANGE" placeholder="WS10M_RANGE" required="required" />
+<input type="number" step="any" name="WS10M_RANGE" placeholder="WS10M_RANGE" required="required" />
 
-<input type="text" name="WS50M" placeholder="'WS50M" required="required" />
+<input type="number" step="any" name="'WS50M" placeholder="'WS50M" required="required" />
 
-<input type="text" name="WS50M_MAX" placeholder="WS50M_MAX" required="required" />
+<input type="number" step="any" name="WS50M_MAX" placeholder="WS50M_MAX" required="required" />
 
-<input type="text" name="WS50M_RANGE" placeholder="WS50M_RANGE" required="required" />
+<input type="number" step="any" name="WS50M_RANGE" placeholder="WS50M_RANGE" required="required" />
 
-<input type="text" name="month" placeholder="month" required="required" />
+<input type="number" step="any" name="month" placeholder="month" required="required" />
 
-<input type="text" name="day" placeholder="day" required="required" />
+<input type="number" step="any" name="day" placeholder="day" required="required" />
 
 
 
